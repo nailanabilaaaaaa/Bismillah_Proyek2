@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BerandaController;
+use App\Http\Controllers\ProfilController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,4 +29,8 @@ Route::get('/layouts', function () {
 
 Route::get('/Beranda', function(){
     return view('Beranda');
+});
+
+Route::get('/Profil', function(){
+    return view('Profil');
 });
