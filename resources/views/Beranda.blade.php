@@ -85,7 +85,7 @@
               <div class="down-content">
                 <h4>Gallery</h4>
                 <p>SD NEGERI 1 BARENG MALANG</p>
-                <a href="HalamanGallery" class="filled-button">Read More</a>
+                <a href="Gallery" class="filled-button">Read More</a>
               </div>
             </div>
           </div>

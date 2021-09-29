@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BerandaController;
 use App\Http\Controllers\ProfilController;
-
+use App\Http\Controllers\GalleryController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -33,4 +33,8 @@ Route::get('/Beranda', function(){
 
 Route::get('/Profil', function(){
     return view('Profil');
+});
+
+Route::get('/Gallery', function(){
+    return view('Gallery');
 });

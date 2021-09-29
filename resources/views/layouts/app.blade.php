@@ -80,7 +80,7 @@ https://templatemo.com/tm-545-finance-business
                 <a class="nav-link" href="Profil">Profil</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="HalamanGallery">Gallery</a>
+                <a class="nav-link" href="Gallery">Gallery</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="HalamanServices">Our Services</a>
