@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.master')
 
 @section('content')
 <div class="container">
@@ -23,7 +23,7 @@
                         <tr><th>Created At</th><th>:</th><td>{{ $user->created_at }}</td></tr>
                     </table>
                 </div>
-                <a class="btn btn-success mt-3" href="Beranda">Beranda</a>
+                <a class="btn btn-success mt-3" href="DataCRUD">Masuk ke Data</a>
             </div>
         </div>
     </div>

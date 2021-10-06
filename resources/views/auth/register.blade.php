@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.master')
 
 @section('content')
 <div class="container">
@@ -84,6 +84,7 @@
                         </div>
                     </form>
                 </div>
+                <a class="btn btn-success mt-3" href="/">Kembali</a>
             </div>
         </div>
     </div>
