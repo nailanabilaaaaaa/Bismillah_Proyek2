@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BerandaController;
 use App\Http\Controllers\ProfilController;
+use App\Http\Controllers\DataController;
+use App\Http\Controllers\ProgramController;
 use App\Http\Controllers\GalleryController;
 /*
 |--------------------------------------------------------------------------
@@ -27,6 +29,10 @@ Route::get('/layouts', function () {
     return view('layouts.app');
 });
 
+Route::get('/', function(){
+    return view('Welcome');
+});
+
 Route::get('/Beranda', function(){
     return view('Beranda');
 });
@@ -35,6 +41,18 @@ Route::get('/Profil', function(){
     return view('Profil');
 });
 
+Route::get('/Data', function(){
+    return view('Data');
+});
+
+Route::get('/Program', function () {
+    return view('Program');
+});
+
 Route::get('/Gallery', function(){
     return view('Gallery');
+});
+
+Route::get('/ContactUs', function(){
+    return view('ContactUs');
 });

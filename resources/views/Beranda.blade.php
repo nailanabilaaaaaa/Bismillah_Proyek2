@@ -13,7 +13,7 @@
                   <h6>SELAMAT DATANG DI PROFIL SEKOLAH</h6>
                   <h4>SD NEGERI 1 BARENG MALANG</h4>
                   <p>PENDIDIKAN YANG BERKARAKTER DAN BERINTEGRITAS</p>
-                  <a href="HalamanHome" class="filled-button">Read More</a>
+                  <a href="Beranda" class="filled-button">Read More</a>
                 </div>
             </div>
           </div>
@@ -51,10 +51,9 @@
         <div class="row">
           <div class="col-md-8">
             <h4>Request a call back right now ?</h4>
-            <span>Mauris ut dapibus velit cras interdum nisl ac urna tempor mollis.</span>
           </div>
           <div class="col-md-4">
-            <a href="contact.html" class="border-button">Contact Us</a>
+            <a href="ContactUs" class="border-button">Contact Us</a>
           </div>
         </div>
       </div>
@@ -71,7 +70,7 @@
           </div>
           <div class="col-md-4">
             <div class="service-item">
-              <img src="{{asset('images/service_01.jpg')}}" alt="">
+              <img src="{{asset('images/Gambar2.jpg')}}" alt="">
               <div class="down-content">
                 <h4>Profil</h4>
                 <p>SD NEGERI 1 BARENG MALANG</p>
@@ -81,7 +80,7 @@
           </div>
           <div class="col-md-4">
             <div class="service-item">
-              <img src="{{asset('images/service_02.jpg')}}" alt="">
+              <img src="{{asset('images/kegiatan9.jpg')}}" alt="">
               <div class="down-content">
                 <h4>Gallery</h4>
                 <p>SD NEGERI 1 BARENG MALANG</p>
@@ -91,11 +90,21 @@
           </div>
           <div class="col-md-4">
             <div class="service-item">
-              <img src="{{asset('images/service_03.jpg')}}" alt="">
+              <img src="{{asset('images/kegiatan2.jpg')}}" alt="">
               <div class="down-content">
                 <h4>Program Kegiatan</h4>
                 <p>SD NEGERI 1 BARENG MALANG</p>
-                <a href="HalamanProgram" class="filled-button">Read More</a>
+                <a href="Program" class="filled-button">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-item">
+              <img src="{{asset('images/Gambar1.jpg')}}" alt="">
+              <div class="down-content">
+                <h4>Data</h4>
+                <p>SD NEGERI 1 BARENG MALANG</p>
+                <a href="Data" class="filled-button">Read More</a>
               </div>
             </div>
           </div>
@@ -136,15 +145,16 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="left-image">
-                    <img src="{{asset('images/more-info.jpg')}}" alt="">
+                    <img src="{{asset('images/sekolah4.jpg')}}" alt="">
                   </div>
                 </div>
                 <div class="col-md-6 align-self-center">
                   <div class="right-content">
                     <span>Who we are</span>
-                    <h2>Get to know about <em>our company</em></h2>
-                    <p>Curabitur pulvinar sem a leo tempus facilisis. Sed non sagittis neque. Nulla conse quat tellus nibh, id molestie felis sagittis ut. Nam ullamcorper tempus ipsum in cursus<br><br>Praes end at dictum metus. Morbi id hendrerit lectus, nec dapibus ex. Etiam ipsum quam, luctus eu egestas eget, tincidunt</p>
-                    <a href="#" class="filled-button">Read More</a>
+                    <h2>Get to know about <em>our School</em></h2>
+                    <p>SDN Bareng 1 Malang berlokasi di Jl. Kelud No.10 A, Kauman, Kec. Klojen, Kota Malang, Jawa Timur 65116,Sekolah kami memiliki
+                        peserta didik 283 anak. Guru berjumlah 13 orang dan tenaga didik 3 orang.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -159,49 +169,33 @@
         <div class="row">
           <div class="col-md-12">
             <div class="section-heading">
-              <h2>What they say <em>about us</em></h2>
-              <span>testimonials from our greatest clients</span>
+              <h2>Berita <em>Terbaru</em></h2>
+              <span>Berita terbaru dari dunia pendidikan</span>
             </div>
           </div>
           <div class="col-md-12">
             <div class="owl-testimonials owl-carousel">
-              
+
               <div class="testimonial-item">
                 <div class="inner-content">
-                  <h4>George Walker</h4>
-                  <span>Chief Financial Analyst</span>
-                  <p>"Nulla ullamcorper, ipsum vel condimentum congue, mi odio vehicula tellus, sit amet malesuada justo sem sit amet quam. Pellentesque in sagittis lacus."</p>
+                  <h4>Kemendikbudristek Dukung Strategi Pengendalian Covid-19 yang Lebih Aktif</h4>
+                  <span></span>
+                  <p>Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi (Kemendikbudristek) siap berkolaborasi
+                      dengan Kementerian Kesehatan (Kemenkes) untuk penerapan strategi pengendalian Covid-19 yang lebih aktif.</p>
+                  <img src="https://cloud.jpnn.com/photo/galeri/watermark/2020/08/27/IMG_20200827_135439.jpg" alt="">
+                  <a href="https://www.kemdikbud.go.id/main/blog/2021/09/kemendikbudristek-dukung-strategi-pengendalian-covid19-yang-lebih-aktif" class="filled-button">Read More</a>
                 </div>
-                <img src="http://placehold.it/60x60" alt="">
               </div>
-              
+
               <div class="testimonial-item">
                 <div class="inner-content">
-                  <h4>John Smith</h4>
-                  <span>Market Specialist</span>
-                  <p>"In eget leo ante. Sed nibh leo, laoreet accumsan euismod quis, scelerisque a nunc. Mauris accumsan, arcu id ornare malesuada, est nulla luctus nisi."</p>
+                  <h4>Pendidikan Pancasila Penting Jadi Pelajaran Wajib dari SD Hingga PT</h4>
+                  <span></span>
+                  <p>Bamsoet menilai pendidikan Pancasila penting dimasukkan sebagai mata pelajaran wajib bagi siswa sekolah dasar hingga perguruan tinggi.</p>
+                  <img src="https://cloud.jpnn.com/photo/galeri/watermark/2021/08/18/IMG_20210818_113912.jpg" alt="">
+                  <a href="https://www.jpnn.com/news/pendidikan-pancasila-penting-jadi-pelajaran-wajib-dari-sd-hingga-pt" class="filled-button">Read More</a>
                 </div>
-                <img src="http://placehold.it/60x60" alt="">
               </div>
-              
-              <div class="testimonial-item">
-                <div class="inner-content">
-                  <h4>David Wood</h4>
-                  <span>Chief Accountant</span>
-                  <p>"Ut ultricies maximus turpis, in sollicitudin ligula posuere vel. Donec finibus maximus neque, vitae egestas quam imperdiet nec. Proin nec mauris eu tortor consectetur tristique."</p>
-                </div>
-                <img src="http://placehold.it/60x60" alt="">
-              </div>
-              
-              <div class="testimonial-item">
-                <div class="inner-content">
-                  <h4>Andrew Boom</h4>
-                  <span>Marketing Head</span>
-                  <p>"Curabitur sollicitudin, tortor at suscipit volutpat, nisi arcu aliquet dui, vitae semper sem turpis quis libero. Quisque vulputate lacinia nisl ac lobortis."</p>
-                </div>
-                <img src="http://placehold.it/60x60" alt="">
-              </div>
-              
             </div>
           </div>
         </div>
@@ -259,23 +253,23 @@
         <div class="row">
           <div class="col-md-12">
             <div class="owl-partners owl-carousel">
-            
+
               <div class="partner-item">
                 <img src="{{asset('images/logo.png')}}" title="1" alt="1">
               </div>
-              
+
               <div class="partner-item">
                 <img src="{{asset('images/logo.png')}}" title="2" alt="2">
               </div>
-              
+
               <div class="partner-item">
                 <img src="{{asset('images/logo.png')}}" title="3" alt="3">
               </div>
-              
+
               <div class="partner-item">
                 <img src="{{asset('images/logo.png')}}" title="4" alt="4">
               </div>
-              
+
               <div class="partner-item">
                 <img src="{{asset('images/logo.png')}}" title="5" alt="5">
               </div>
@@ -296,7 +290,7 @@
     <script src="{{asset('js/slick.js')}}"></script>
     <script src="{{asset('js/accordions.js')}}"></script>
 
-    <script language = "text/Javascript"> 
+    <script language = "text/Javascript">
       cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
       function clearField(t){                   //declaring the array outside of the
       if(! cleared[t.id]){                      // function makes it static and global
