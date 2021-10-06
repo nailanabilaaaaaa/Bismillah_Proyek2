@@ -65,7 +65,7 @@ https://templatemo.com/tm-545-finance-business
     <header class="">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
-          <a class="navbar-brand" href="Beranda"><h2>SD  NEGERI BARENG 1</h2></a>
+          <a class="navbar-brand" href="Beranda"><h2>SD NEGERI 1 BARENG</h2></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -80,13 +80,16 @@ https://templatemo.com/tm-545-finance-business
                 <a class="nav-link" href="Profil">Profil</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="Data">Data</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Program">Program</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="Gallery">Gallery</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="HalamanServices">Our Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="HalamanContact">Contact Us</a>
+                <a class="nav-link" href="ContactUs">Contact Us</a>
               </li>
             </ul>
           </div>
@@ -104,8 +107,8 @@ https://templatemo.com/tm-545-finance-business
       <div class="container">
         <div class="row">
           <div class="col-md-3 footer-item">
-            <h4>Finance Business</h4>
-            <p>Vivamus tellus mi. Nulla ne cursus elit,vulputate. Sed ne cursus augue hasellus lacinia sapien vitae.</p>
+            <h4>Profil</h4>
+            <p>SD NEGERI 1 BARENG MALANG</p>
             <ul class="social-icons">
               <li><a rel="nofollow" href="https://fb.com/templatemo" target="_blank"><i class="fa fa-facebook"></i></a></li>
               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
