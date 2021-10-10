@@ -7,6 +7,7 @@ use App\Http\Controllers\DataController;
 use App\Http\Controllers\ProgramController;
 use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\ProfilSekolahController;
+use App\Http\Controllers\MottoSekolahController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -54,5 +55,6 @@ Route::get('/ContactUs', function(){
     return view('ContactUs');
 });
 
-Route::resource('/profil', ProfilSekolahController::class);
+Route::resource('/profil_sekolah', ProfilSekolahController::class);
+Route::resource('/motto', MottoSekolahController::class);
 Route::resource('/Profil', ProfilController::class);

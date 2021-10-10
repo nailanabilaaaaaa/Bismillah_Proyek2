@@ -8,7 +8,7 @@
             <div class="pull-left mt-2">
                 <h2>Profil Sekolah</h2>
                 <div class="float-right my-2">
-                    <a class="btn btn-success" href="{{ route('profil.create') }}"> Input Profil</a>
+                    <a class="btn btn-success" href="{{ route('profil_sekolah.create') }}"> Input Profil</a>
                 </div>
             </div>
         </div>
@@ -25,9 +25,9 @@
             <td>{{ $data->title}}</td>
             <td>{{ $data->content}}</td>
             <td>
-                <form action="{{ route('profil.destroy',$data->id) }}" method="POST">
-                    <a class="btn btn-info" href="{{ route('profil.show',$data->id) }}">Show</a>
-                    <a class="btn btn-primary" href="{{ route('profil.edit',$data->id) }}">Edit</a>
+                <form action="{{ route('profil_sekolah.destroy',$data->id) }}" method="POST">
+                    <a class="btn btn-info" href="{{ route('profil_sekolah.show',$data->id) }}">Show</a>
+                    <a class="btn btn-primary" href="{{ route('profil_sekolah.edit',$data->id) }}">Edit</a>
                     @csrf 
                     @method('DELETE')
                     <button type="submit" class="btn btn-danger">Delete</button>

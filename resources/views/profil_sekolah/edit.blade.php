@@ -18,7 +18,7 @@
                     </ul>
                 </div>
             @endif
-            <form method="post" action="{{ route('profil.update', $profil->id) }}" id="myForm">
+            <form method="post" action="{{ route('profil_sekolah.update', $profil->id) }}" id="myForm">
             @csrf
             @method('PUT')
                 <div class="form-group">

@@ -15,7 +15,7 @@ class ProfilSekolahController extends Controller
     public function index()
     {
         $profil = Profil::get();
-        return view('profil.index', compact('profil'));
+        return view('profil_sekolah.index', compact('profil'));
     }
 
     /**
@@ -26,7 +26,7 @@ class ProfilSekolahController extends Controller
     public function create()
     {
         $profil = Profil::all();
-        return view('profil.createprofil', compact('profil'));
+        return view('profil_sekolah.create', compact('profil'));
     }
 
     /**
@@ -47,7 +47,7 @@ class ProfilSekolahController extends Controller
         Profil::create($request->all());
 
         //jika data berhasil ditambahkan, akan kembali ke halaman utama
-        return redirect()->route('profil.index')
+        return redirect()->route('profil_sekolah.index')
             ->with('success', 'Profil Berhasil Ditambahkan');
     }
 
@@ -61,7 +61,7 @@ class ProfilSekolahController extends Controller
     {
         //menampilkan detail data dengan menemukan/berdasarkan Nim Mahasiswa
         $profil = Profil::find($id);
-        return view('profil.detailprofil', compact('profil'));
+        return view('profil_sekolah.detail', compact('profil'));
     }
 
     /**
@@ -74,7 +74,7 @@ class ProfilSekolahController extends Controller
     {
         //menampilkan detail data dengan menemukan berdasarkan Nim Mahasiswa untuk diedit
         $profil = Profil::find($id);
-        return view('profil.editprofil', compact('profil'));
+        return view('profil_sekolah.edit', compact('profil'));
     }
 
     /**
@@ -96,7 +96,7 @@ class ProfilSekolahController extends Controller
         Profil::find($id)->update($request->all());
 
         //jika data berhasil diupdate, akan kembali ke halaman utama
-        return redirect()->route('profil.index')
+        return redirect()->route('profil_sekolah.index')
             ->with('success', 'Profil Berhasil Diupdate');
     }
 
@@ -110,7 +110,7 @@ class ProfilSekolahController extends Controller
     {
         //fungsi eloquent untuk menghapus data
         Profil::find($id)->delete();
-        return redirect()->route('profil.index')
+        return redirect()->route('profil_sekolah.index')
             -> with('success', 'Profil Berhasil Dihapus');
     }
 }

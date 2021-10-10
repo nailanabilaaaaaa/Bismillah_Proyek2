@@ -14,7 +14,7 @@
                     <li class="list-group-item"><b>Content : </b>{{$profil->content}}</li>
                 </ul>
             </div>
-            <a class="btn btn-success mt-3" href="{{ route('profil.index') }}">Kembali</a>
+            <a class="btn btn-success mt-3" href="{{ route('profil_sekolah.index') }}">Kembali</a>
         </div>
     </div>
 </div>
