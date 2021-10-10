@@ -6,6 +6,7 @@ use App\Http\Controllers\ProfilController;
 use App\Http\Controllers\DataController;
 use App\Http\Controllers\ProgramController;
 use App\Http\Controllers\GalleryController;
+use App\Http\Controllers\ProfilSekolahController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -37,10 +38,6 @@ Route::get('/Beranda', function(){
     return view('Beranda');
 });
 
-Route::get('/Profil', function(){
-    return view('Profil');
-});
-
 Route::get('/Data', function(){
     return view('Data');
 });
@@ -56,3 +53,6 @@ Route::get('/Gallery', function(){
 Route::get('/ContactUs', function(){
     return view('ContactUs');
 });
+
+Route::resource('/profil', ProfilSekolahController::class);
+Route::resource('/Profil', ProfilController::class);

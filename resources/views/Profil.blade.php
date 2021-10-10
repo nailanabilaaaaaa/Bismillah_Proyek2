@@ -14,6 +14,7 @@
       </div>
     </div>
 
+    @foreach ($profil as $data)
     <div class="more-info">
       <div class="container">
         <div class="row">
@@ -23,10 +24,8 @@
                 <div class="col-md-13">
                   <div class="col-md-13 align-self-center">
                   <div class="right-content">
-                    <h2>PROFIL <em>SEKOLAH</em></h2>
-                    <p>Sekolah adalah salah satu lembaga pendidikan formal. Sebagai suatu lembaga pendidikan formal, sekolah berperan sangat menentukan dalam rangka usaha untuk meningkatkan kwalitas pendidikan  Sekolah juga merupakan lembaga pendidikan yang selalu berinteraksi dengan  masyarakat sekitarnya. 
-                      Sekolah memiliki satu tradisi yang kaya dengan keterlibatan orang tua siswa dan komunitasnya dalam penyelenggaraan pendidikan. Untuk memantapkan dan mengembangkan tradisi tersebut, maka dibentuklah satu lembaga yang dikenal dengan nama Komite Sekolah yang berkedudukan di satu satuan pendidikan, tidak terkecuali di SDN Bareng 1.
-                      SDN Bareng 1 juga sudah membentuk wadah tersebut sebagai mitra kerja sekolah guna bersama-sama ikut serta memajukan dunia pendidikan dan ikut serta juga memberikan informasi kepada masyarakat akan betapa pentingnya pendidikan untuk anak-anak kita sebagai penerus perjuangan bangsa ini. Untuk itu SDN Bareng 1 merumuskan visi, misi, serta motto guna mewujudkan hal tersebut. Visi, misi, dan motto yang dimaksud adalah sebagai berikut.</p>
+                    <h2>{{ $data->title}}</h2>
+                    <p>{{ $data->content}}</p>
                   </div>
                 </div>
               </div>
@@ -35,6 +34,7 @@
         </div>
       </div>
     </div>
+    @endforeach
 
     <div class="services">
       <div class="container">
