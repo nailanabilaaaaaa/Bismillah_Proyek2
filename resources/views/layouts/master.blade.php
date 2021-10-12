@@ -53,16 +53,20 @@
                             @endif
                         @else
 
-                            <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    Profil
-                                </a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('menuprofil.index') }}">{{ __('Profil') }}</a>
+                            </li>
 
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('profil_sekolah.index') }}">
-                                        {{ __('Profil Sekolah') }}
-                                    </a>
-                                </div>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('menugaleri.index') }}">{{ __('Galeri') }}</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('menuberita.index') }}">{{ __('Berita') }}</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('menucontact.index') }}">{{ __('Contact') }}</a>
                             </li>
 
                             <li class="nav-item dropdown">

@@ -2,20 +2,20 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Profil;
 use Illuminate\Http\Request;
+use App\Models\Berita;
 
-class ProfilSekolahController extends Controller
+class MenuBeritaController extends Controller
 {
-    /**
+     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
     public function index()
     {
-        $profil = Profil::get();
-        return view('profil_sekolah.index', compact('profil'));
+       $berita = Berita::get();
+       return view('menuberita.index', compact('berita'));
     }
 
     /**
@@ -25,8 +25,8 @@ class ProfilSekolahController extends Controller
      */
     public function create()
     {
-        $profil = Profil::all();
-        return view('profil_sekolah.create', compact('profil'));
+        $berita = Berita::all();
+        return view('menuberita.create');
     }
 
     /**
@@ -38,17 +38,16 @@ class ProfilSekolahController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'id' => 'required',
             'title' => 'required',
             'content' => 'required',
         ]);
 
         //fungsi eloquent untuk menambah data
-        Profil::create($request->all());
+        Berita::create($request->all());
 
         //jika data berhasil ditambahkan, akan kembali ke halaman utama
-        return redirect()->route('profil_sekolah.index')
-            ->with('success', 'Profil Berhasil Ditambahkan');
+        return redirect()->route('menuberita.index')
+            ->with('success', 'Berita Berhasil Ditambahkan');
     }
 
     /**
@@ -59,9 +58,8 @@ class ProfilSekolahController extends Controller
      */
     public function show($id)
     {
-        //menampilkan detail data dengan menemukan/berdasarkan Nim Mahasiswa
-        $profil = Profil::find($id);
-        return view('profil_sekolah.detail', compact('profil'));
+        $berita = Berita::find($id);
+        return view('menuberita.show', compact('berita'));
     }
 
     /**
@@ -72,9 +70,8 @@ class ProfilSekolahController extends Controller
      */
     public function edit($id)
     {
-        //menampilkan detail data dengan menemukan berdasarkan Nim Mahasiswa untuk diedit
-        $profil = Profil::find($id);
-        return view('profil_sekolah.edit', compact('profil'));
+        $berita = Berita::find($id);
+        return view('menuberita.edit', compact('berita'));
     }
 
     /**
@@ -87,17 +84,13 @@ class ProfilSekolahController extends Controller
     public function update(Request $request, $id)
     {
         $request->validate([
-            'id' => 'required',
             'title' => 'required',
             'content' => 'required',
         ]);
 
-        //fungsi eloquent untuk mengupdate data inputan kita
-        Profil::find($id)->update($request->all());
+        Berita::find($id)->update($request->all());
 
-        //jika data berhasil diupdate, akan kembali ke halaman utama
-        return redirect()->route('profil_sekolah.index')
-            ->with('success', 'Profil Berhasil Diupdate');
+        return redirect()->route('menuberita.index')->with('success', 'Berita Berhasil Diupdate');
     }
 
     /**
@@ -108,9 +101,7 @@ class ProfilSekolahController extends Controller
      */
     public function destroy($id)
     {
-        //fungsi eloquent untuk menghapus data
-        Profil::find($id)->delete();
-        return redirect()->route('profil_sekolah.index')
-            -> with('success', 'Profil Berhasil Dihapus');
+        Berita::find($id)->delete();
+        return redirect()->route('menuberita.index')->with('success', 'Berita Berhasil Dihapus');
     }
 }

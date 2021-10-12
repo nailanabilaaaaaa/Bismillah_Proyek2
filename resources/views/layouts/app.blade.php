@@ -86,10 +86,13 @@ https://templatemo.com/tm-545-finance-business
                 <a class="nav-link" href="Program">Program</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="Gallery">Gallery</a>
+                <a class="nav-link" href="Galeri">Galeri</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="ContactUs">Contact Us</a>
+                <a class="nav-link" href="Berita">Berita</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Contact">Contact</a>
               </li>
             </ul>
           </div>

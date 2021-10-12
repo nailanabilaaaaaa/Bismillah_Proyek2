@@ -4,9 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class GalleryController extends Controller
+class GaleriController extends Controller
 {
     public function index(){
-        return view('Gallery');
+        return view('Galeri');
     }
 }

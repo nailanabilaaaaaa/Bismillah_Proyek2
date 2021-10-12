@@ -5,9 +5,13 @@ use App\Http\Controllers\BerandaController;
 use App\Http\Controllers\ProfilController;
 use App\Http\Controllers\DataController;
 use App\Http\Controllers\ProgramController;
-use App\Http\Controllers\GalleryController;
-use App\Http\Controllers\ProfilSekolahController;
-use App\Http\Controllers\MottoSekolahController;
+use App\Http\Controllers\GaleriController;
+use App\Http\Controllers\BeritaController;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\MenuProfilController;
+use App\Http\Controllers\MenuGaleriController;
+use App\Http\Controllers\MenuBeritaController;
+use App\Http\Controllers\MenuContactController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -47,14 +51,14 @@ Route::get('/Program', function () {
     return view('Program');
 });
 
-Route::get('/Gallery', function(){
-    return view('Gallery');
-});
-
-Route::get('/ContactUs', function(){
-    return view('ContactUs');
-});
-
-Route::resource('/profil_sekolah', ProfilSekolahController::class);
-Route::resource('/motto', MottoSekolahController::class);
+Route::resource('/menuprofil', MenuProfilController::class);
 Route::resource('/Profil', ProfilController::class);
+
+Route::resource('/menugaleri', MenuGaleriController::class);
+Route::resource('/Galeri', GaleriController::class);
+
+Route::resource('/menuberita', MenuBeritaController::class);
+Route::resource('/Berita', BeritaController::class);
+
+Route::resource('/menucontact', MenuContactController::class);
+Route::resource('/Contact', ContactController::class);

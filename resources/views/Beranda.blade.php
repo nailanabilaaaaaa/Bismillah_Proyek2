@@ -10,7 +10,7 @@
           <div class="item item-1">
             <div class="img-fill">
                 <div class="text-content">
-                  <h6>SELAMAT DATANG DI PROFIL SEKOLAH</h6>
+                  <h6>SELAMAT DATANG DI WEBSITE SEKOLAH</h6>
                   <h4>SD NEGERI 1 BARENG MALANG</h4>
                   <p>PENDIDIKAN YANG BERKARAKTER DAN BERINTEGRITAS</p>
                   <a href="Beranda" class="filled-button">Read More</a>
@@ -22,10 +22,10 @@
           <div class="item item-2">
             <div class="img-fill">
                 <div class="text-content">
-                  <h6>we are here to support you</h6>
-                  <h4>Accounting<br>&amp; Management</h4>
-                  <p>You are allowed to use this template for your company websites. You are NOT allowed to re-distribute this template ZIP file on any template download website. Please contact TemplateMo for more detail.</p>
-                  <a href="services.html" class="filled-button">our services</a>
+                  <h6>PROFIL SEKOLAH</h6>
+                  <h4>SD NEGERI 1 BARENG MALANG</h4>
+                  <p>PENDIDIKAN YANG BERKARAKTER DAN BERINTEGRITAS</p>
+                  <a href="Profil" class="filled-button">Read More</a>
                 </div>
             </div>
           </div>
@@ -34,10 +34,10 @@
           <div class="item item-3">
             <div class="img-fill">
                 <div class="text-content">
-                  <h6>we have a solid background</h6>
-                  <h4>Market Analysis<br>&amp; Statistics</h4>
-                  <p>Vivamus ut tellus mi. Nulla nec cursus elit, id vulputate mi. Sed nec cursus augue. Phasellus lacinia ac sapien vitae dapibus. Mauris ut dapibus velit cras interdum nisl ac urna tempor mollis.</p>
-                  <a href="about.html" class="filled-button">learn more</a>
+                  <h6>DATA SEKOLAH</h6>
+                  <h4>SD NEGERI 1 BARENG MALANG</h4>
+                  <p>PENDIDIKAN YANG BERKARAKTER DAN BERINTEGRITAS</p>
+                  <a href="Data" class="filled-button">Read More</a>
                 </div>
             </div>
           </div>

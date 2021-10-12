@@ -5,18 +5,19 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Profil extends Model
+class Galeri extends Model
 {
     use HasFactory;
 
-    protected $table="profil";
+    protected $table="galeri";
 
     protected $fillable = [
         'id',
-        'profil_sekolah',
-        'motto_sekolah',
-        'visi_sekolah',
-        'misi_sekolah',
-        'tujuan_sekolah',
+        'image1',
+        'contet1',
+        'image2',
+        'contet2',
+        'image3',
+        'contet3',
     ];
 }
