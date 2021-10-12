@@ -2,7 +2,7 @@
 @section('content')
     <div class="container mt-5">
         <div class="row justify-content-center align-items-center">
-            <div class="card" style="width: 24rem;">
+            <div class="card" style="width: 100rem;">
                 <div class="card-header">
                     Tambah Contact
                 </div>
@@ -18,7 +18,7 @@
                             </ul>
                         </div>
                     @endif
-                    <form method="post" action="{{ route('menucontact.store') }}" id="myForm">
+                    <form method="post" action="{{ route('menucontact.store') }}" id="myForm" enctype="multipart/form-data">
                         @csrf
                         <div class="form-group">
                             <label for="phone">Phone</label>
@@ -32,7 +32,7 @@
                             <label for="location">Location</label>
                             <textarea type="text" name="location" class="form-control" id="location" aria-describedby="location"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="submit" class="btn btn-primary float-right">Submit</button>
                     </form>
                 </div>
                 <a class="btn btn-success" href="{{ route('menucontact.index') }}">Kembali</a>

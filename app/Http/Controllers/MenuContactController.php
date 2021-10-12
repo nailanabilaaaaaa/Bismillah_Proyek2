@@ -48,7 +48,7 @@ class MenuContactController extends Controller
 
         //jika data berhasil ditambahkan, akan kembali ke halaman utama
         return redirect()->route('menucontact.index')
-            ->with('success', 'Berita Berhasil Ditambahkan');
+            ->with('success', 'Contact Berhasil Ditambahkan');
     }
 
     /**
@@ -92,7 +92,7 @@ class MenuContactController extends Controller
 
         Contact::find($id)->update($request->all());
 
-        return redirect()->route('menucontact.index')->with('success', 'Berita Berhasil Diupdate');
+        return redirect()->route('menucontact.index')->with('success', 'Contact Berhasil Diupdate');
     }
 
     /**
@@ -104,6 +104,6 @@ class MenuContactController extends Controller
     public function destroy($id)
     {
         Contact::find($id)->delete();
-        return redirect()->route('menucontact.index')->with('success', 'Berita Berhasil Dihapus');
+        return redirect()->route('menucontact.index')->with('success', 'Contact Berhasil Dihapus');
     }
 }

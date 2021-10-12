@@ -26,7 +26,7 @@ class MenuProfilController extends Controller
     public function create()
     {
         $profil = Profil::all();
-        return view('menuprofil.create', compact('profil'));
+        return view('menuprofil.create');
     }
 
     /**
@@ -38,7 +38,6 @@ class MenuProfilController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'id' => 'required',
             'profil_sekolah' => 'required',
             'motto_sekolah' => 'required',
             'visi_sekolah' => 'required',
@@ -47,15 +46,8 @@ class MenuProfilController extends Controller
         ]);
 
         //eloquent untuk insert data mahasiswa
-        $profil = new Profil();
-        $profil->id = $request->get('id');
-        $profil->profil_sekolah = $request->get('profil_sekolah');
-        $profil->motto_sekolah = $request->get('motto_sekolah');
-        $profil->visi_sekolah = $request->get('visi_sekolah');
-        $profil->misi_sekolah = $request->get('misi_sekolah');
-        $profil->tujuan_sekolah = $request->get('tujuan_sekolah');
-        $profil->save();
-
+        Profil::create($request->all());
+        
         //jika data berhasil ditambahkan, akan kembali ke halaman utama
         return redirect()->route('menuprofil.index')
             ->with('success', 'Profil Berhasil Ditambahkan');
@@ -97,7 +89,6 @@ class MenuProfilController extends Controller
     public function update(Request $request, $id)
     {
         $request->validate([
-            'id' => 'required',
             'profil_sekolah' => 'required',
             'motto_sekolah' => 'required',
             'visi_sekolah' => 'required',
@@ -106,14 +97,8 @@ class MenuProfilController extends Controller
         ]);
 
         //eloquent untuk insert data mahasiswa
-        $profil = new Profil();
-        $profil->id = $request->get('id');
-        $profil->profil_sekolah = $request->get('profil_sekolah');
-        $profil->motto_sekolah = $request->get('motto_sekolah');
-        $profil->visi_sekolah = $request->get('visi_sekolah');
-        $profil->misi_sekolah = $request->get('misi_sekolah');
-        $profil->tujuan_sekolah = $request->get('tujuan_sekolah');
-        $profil->save();
+
+        Profil::find($id)->update($request->all());
 
         //jika data berhasil diupdate, akan kembali ke halaman utama
         return redirect()->route('menuprofil.index')

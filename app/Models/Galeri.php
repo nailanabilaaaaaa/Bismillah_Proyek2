@@ -9,10 +9,11 @@ class Galeri extends Model
 {
     use HasFactory;
 
-    protected $table="galeri";
+    protected $table = 'galeri';
+    public $timestamps = false;
+    protected $primaryKey = 'id'; // Memanggil isi DB Dengan primarykey
 
     protected $fillable = [
-        'id',
         'image1',
         'contet1',
         'image2',

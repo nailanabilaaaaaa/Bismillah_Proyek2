@@ -9,10 +9,11 @@ class Profil extends Model
 {
     use HasFactory;
 
-    protected $table="profil";
+    protected $table = 'profil';
+    public $timestamps = false;
+    protected $primaryKey = 'id'; // Memanggil isi DB Dengan primarykey
 
     protected $fillable = [
-        'id',
         'profil_sekolah',
         'motto_sekolah',
         'visi_sekolah',

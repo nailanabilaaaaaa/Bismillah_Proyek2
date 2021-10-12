@@ -15,12 +15,13 @@ class CreateGaleriTable extends Migration
     {
         Schema::create('galeri', function (Blueprint $table) {
             $table->id();
-            $table->image_1();
-            $table->content1();
-            $table->image_2();
-            $table->content2();
-            $table->image_3();
-            $table->content3();
+            $table->string('image1');
+            $table->string('content1');
+            $table->string('image2');
+            $table->string('content2');
+            $table->string('image3');
+            $table->string('content3');
+            $table->timestamps();
         });
     }
 

@@ -9,12 +9,11 @@
             </div>
             <div class="card-body">
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item"><b>ID : </b>{{$profil->id}}</li>
-                    <li class="list-group-item"><b>PROFIL SEKOLAH : </b>{{$profil->profil_sekolah}}</li>
-                    <li class="list-group-item"><b>MOTTO SEKOLAH : </b>{{$profil->motto_sekolah}}</li>
-                    <li class="list-group-item"><b>VISI SEKOLAH : </b>{{$profil->visi_sekolah}}</li>
-                    <li class="list-group-item"><b>MISI SEKOLAH : </b>{{$profil->misi_sekolah}}</li>
-                    <li class="list-group-item"><b>TUJUAN SEKOLAH : </b>{{$profil->tujuan_sekolah}}</li>
+                    <li class="list-group-item"><b>Profil Sekolah : </b>{{$profil->profil_sekolah}}</li>
+                    <li class="list-group-item"><b>Motto Sekolah : </b>{{$profil->motto_sekolah}}</li>
+                    <li class="list-group-item"><b>Visi Sekolah : </b>{{$profil->visi_sekolah}}</li>
+                    <li class="list-group-item"><b>Misi Sekolah : </b>{{$profil->misi_sekolah}}</li>
+                    <li class="list-group-item"><b>Tujuan Sekolah : </b>{{$profil->tujuan_sekolah}}</li>
                 </ul>
             </div>
             <a class="btn btn-success mt-3" href="{{ route('menuprofil.index') }}">Kembali</a>

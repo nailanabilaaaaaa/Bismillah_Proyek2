@@ -7,7 +7,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <h1>Gallery</h1>
+            <h1>Galeri</h1>
             <span>SD NEGERI BARENG 1 MALANG</span>
           </div>
         </div>
@@ -23,105 +23,17 @@
               <span>SD NEGERI BARENG 1 MALANG</span>
             </div>
           </div>
+          @foreach ($galeri as $data)
           <div class="col-md-4">
             <div class="team-item">
-              <img src="{{asset('images/sekolah1.jpg')}}" alt="">
+            <img src="{{asset('storage/' . $data->image1)}}" alt="">
               <div class="down-content">
-                <h4>Halaman Depan Sekolah</h4>
+                <h4>{{ $data->content1 }}</h4>
                 <span>SD NEGERI BARENG 1 MALANG</span>
               </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="team-item">
-              <img src="{{asset('images/sekolah2.jpg')}}" alt="">
-              <div class="down-content">
-                <h4>Halaman Samping Sekolah</h4>
-                <span>SD NEGERI BARENG 1 MALANG</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="team-item">
-              <img src="{{asset('images/sekolah3.jpg')}}" alt="">
-              <div class="down-content">
-                <h4>Halaman Tengah Sekolah</h4>
-                <span>SD NEGERI BARENG 1 MALANG</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="team-item">
-              <img src="{{asset('images/sekolah6.jpg')}}" alt="">
-              <div class="down-content">
-                <h4>Ruang Kepala Sekolah</h4>
-                <span>SD NEGERI BARENG 1 MALANG</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="team-item">
-              <img src="{{asset('images/sekolah7.jpg')}}" alt="">
-              <div class="down-content">
-                <h4>Ruang Tamu</h4>
-                <span>SD NEGERI BARENG 1 MALANG</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="team-item">
-              <img src="{{asset('images/sekolah8.jpg')}}" alt="">
-              <div class="down-content">
-                <h4>Panggung Kreasi</h4>
-                <span>SD NEGERI BARENG 1 MALANG</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="team-item">
-              <img src="{{asset('images/sekolah9.jpg')}}" alt="">
-              <div class="down-content">
-                <h4>Musholla Sekolah</h4>
-                <span>SD NEGERI BARENG 1 MALANG</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="team-item">
-              <img src="{{asset('images/sekolah10.jpg')}}" alt="">
-              <div class="down-content">
-                <h4>Halaman Parkir Sekolah</h4>
-                <span>SD NEGERI BARENG 1 MALANG</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="team-item">
-              <img src="{{asset('images/sekolah11.jpg')}}" alt="">
-              <div class="down-content">
-                <h4>Hidroponik di Halaman Depan Sekolah</h4>
-                <span>SD NEGERI BARENG 1 MALANG</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="team-item">
-              <img src="{{asset('images/sekolah12.jpg')}}" alt="">
-              <div class="down-content">
-                <h4>Hidroponik Botol Bekas di Halaman Belakang</h4>
-                <span>SD NEGERI BARENG 1 MALANG</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="team-item">
-              <img src="{{asset('images/sekolah13.jpg')}}" alt="">
-              <div class="down-content">
-                <h4>Air Siap Minum</h4>
-                <span>SD NEGERI BARENG 1 MALANG</span>
-              </div>
-            </div>
-          </div>
+          @endforeach
         </div>
       </div>
     </div>
@@ -135,60 +47,17 @@
               <span>SD NEGERI BARENG 1 MALANG</span>
             </div>
           </div>
+          @foreach ($galeri as $data)
           <div class="col-md-4">
             <div class="team-item">
-              <img src="{{asset('images/kegiatan1.jpg')}}" alt="">
+            <img src="{{asset('storage/' . $data->image2)}}" alt="">
               <div class="down-content">
-                <h4>Bercocok Tanam</h4>
+                <h4>{{ $data->content2 }}</h4>
                 <span>SD NEGERI BARENG 1 MALANG</span>
               </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="team-item">
-              <img src="{{asset('images/kegiatan2.jpg')}}" alt="">
-              <div class="down-content">
-                <h4>Merawat Hewan</h4>
-                <span>SD NEGERI BARENG 1 MALANG</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="team-item">
-              <img src="{{asset('images/kegiatan3.jpg')}}" alt="">
-              <div class="down-content">
-                <h4>Observasi Produksi Susu Sapi</h4>
-                <span>SD NEGERI BARENG 1 MALANG</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="team-item">
-              <img src="{{asset('images/kegiatan4.jpg')}}" alt="">
-              <div class="down-content">
-                <h4>Observasi ke Museum Brawijaya</h4>
-                <span>SD NEGERI BARENG 1 MALANG</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="team-item">
-              <img src="{{asset('images/kegiatan5.jpg')}}" alt="">
-              <div class="down-content">
-                <h4>Olahraga di Taman Slamet</h4>
-                <span>SD NEGERI BARENG 1 MALANG</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="team-item">
-              <img src="{{asset('images/kegiatan6.jpg')}}" alt="">
-              <div class="down-content">
-                <h4>Observasi ke Candi</h4>
-                <span>SD NEGERI BARENG 1 MALANG</span>
-              </div>
-            </div>
-          </div>
+          @endforeach
         </div>
       </div>
     </div>
@@ -202,109 +71,20 @@
               <span>SD NEGERI BARENG 1 MALANG</span>
             </div>
           </div>
+          @foreach ($galeri as $data)
           <div class="col-md-4">
             <div class="team-item">
-              <img src="{{asset('images/kegiatan7.jpg')}}" alt="">
+            <img src="{{asset('storage/' . $data->image3)}}" alt="">
               <div class="down-content">
-                <h4>Jalan Sehat HUT RI</h4>
+                <h4>{{ $data->content3 }}</h4>
                 <span>SD NEGERI BARENG 1 MALANG</span>
               </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="team-item">
-              <img src="{{asset('images/kegiatan8.jpg')}}" alt="">
-              <div class="down-content">
-                <h4>Kirab Tahun Baru Islam</h4>
-                <span>SD NEGERI BARENG 1 MALANG</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="team-item">
-              <img src="{{asset('images/kegiatan9.jpg')}}" alt="">
-              <div class="down-content">
-                <h4>Penampilan Siswa Kirab Tahun Baru Islam</h4>
-                <span>SD NEGERI BARENG 1 MALANG</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="team-item">
-              <img src="{{asset('images/kegiatan10.jpg')}}" alt="">
-              <div class="down-content">
-                <h4>Penampilan Siswa Kirab Tahun Baru Islam</h4>
-                <span>SD NEGERI BARENG 1 MALANG</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="team-item">
-              <img src="{{asset('images/kegiatan11.jpg')}}" alt="">
-              <div class="down-content">
-                <h4>Penampilan Siswa Kirab Tahun Baru Islam</h4>
-                <span>SD NEGERI BARENG 1 MALANG</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="team-item">
-              <img src="{{asset('images/kegiatan12.jpg')}}" alt="">
-              <div class="down-content">
-                <h4>Penampilan Siswa Hari Kemerdekaan RI</h4>
-                <span>SD NEGERI BARENG 1 MALANG</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="team-item">
-              <img src="{{asset('images/kegiatan13.jpg')}}" alt="">
-              <div class="down-content">
-                <h4>PERSAMI Sekolah</h4>
-                <span>SD NEGERI BARENG 1 MALANG</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="team-item">
-              <img src="{{asset('images/kegiatan14.jpg')}}" alt="">
-              <div class="down-content">
-                <h4>Piket Kelas</h4>
-                <span>SD NEGERI BARENG 1 MALANG</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="team-item">
-              <img src="{{asset('images/kegiatan15.jpg')}}" alt="">
-              <div class="down-content">
-                <h4>Belajar Menggosok Gigi</h4>
-                <span>SD NEGERI BARENG 1 MALANG</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="team-item">
-              <img src="{{asset('images/kegiatan16.jpg')}}" alt="">
-              <div class="down-content">
-                <h4>Pemeriksaan Kesehatan Gigi</h4>
-                <span>SD NEGERI BARENG 1 MALANG</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="team-item">
-              <img src="{{asset('images/kegiatan17.jpg')}}" alt="">
-              <div class="down-content">
-                <h4>PMR Sekolah</h4>
-                <span>SD NEGERI BARENG 1 MALANG</span>
-              </div>
-            </div>
-          </div>
+          @endforeach
         </div>
       </div>
     </div>
-
     <br></br><br></br><br></br>
 
 @endsection

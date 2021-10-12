@@ -5,7 +5,7 @@
     <div class="row justify-content-center align-items-center">
         <div class="card" style="width: 100rem;">
             <div class="card-header">
-                Edit Contact
+                Edit Menu Contact
             </div>
             <div class="card-body">
                 @if ($errors->any())

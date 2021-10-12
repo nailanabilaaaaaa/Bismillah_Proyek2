@@ -22,10 +22,10 @@
           <div class="item item-2">
             <div class="img-fill">
                 <div class="text-content">
-                  <h6>PROFIL SEKOLAH</h6>
+                  <h6>SELAMAT DATANG DI WEBSITE SEKOLAH</h6>
                   <h4>SD NEGERI 1 BARENG MALANG</h4>
                   <p>PENDIDIKAN YANG BERKARAKTER DAN BERINTEGRITAS</p>
-                  <a href="Profil" class="filled-button">Read More</a>
+                  <a href="Beranda" class="filled-button">Read More</a>
                 </div>
             </div>
           </div>
@@ -34,10 +34,10 @@
           <div class="item item-3">
             <div class="img-fill">
                 <div class="text-content">
-                  <h6>DATA SEKOLAH</h6>
+                  <h6>SELAMAT DATANG DI WEBSITE SEKOLAH</h6>
                   <h4>SD NEGERI 1 BARENG MALANG</h4>
                   <p>PENDIDIKAN YANG BERKARAKTER DAN BERINTEGRITAS</p>
-                  <a href="Data" class="filled-button">Read More</a>
+                  <a href="Beranda" class="filled-button">Read More</a>
                 </div>
             </div>
           </div>

@@ -22,17 +22,15 @@
     
     <table class="table table-bordered">
         <tr>
-            <th>ID</th>
-            <th>PROFIL SEKOLAH</th>
-            <th>MOTTO SEKOLAH</th>
-            <th>VISI SEKOLAH</th>
-            <th>MISI SEKOLAH</th>
-            <th>TUJUAN SEKOLAH</th>
+            <th>Profil Sekolah</th>
+            <th>Motto Sekolah</th>
+            <th>Visi Sekolah</th>
+            <th>Misi Sekolah</th>
+            <th>Tujuan Sekolah</th>
             <th width="280px">ACTION</th>
         </tr>
         @foreach ($profil as $data)
         <tr>
-            <td>{{ $data->id }}</td>
             <td>{{ $data->profil_sekolah }}</td>
             <td>{{ $data->motto_sekolah }}</td>
             <td>{{ $data->visi_sekolah }}</td>
